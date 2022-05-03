@@ -1,36 +1,47 @@
 import math
 
-# sideSquare = float(input('What is the length of a side of the square? '))
-# print(f'The area of the square is: {sideSquare * sideSquare}')
+# sideSquare = float(input("What is the length of a side of the square? "))
+# areaSquare = sideSquare ** 2
+# volumeSquare = sideSquare ** 3
 
-# lengthRectangle = float(input('What is the length of the rectangle? '))
-# widthRectangle = float(input('What is the width of the rectangle? '))
-# print(f'The area of the rectangle is {lengthRectangle * widthRectangle}')
+# print(f"The area of the square is: {areaSquare}")
+# print(f"The volume of the square is: {volumeSquare}")
 
-# radiusCircle = float(input('What is the radius of the circle? '))
-# print(f'The area of the circle is {3.14 * (radiusCircle**2)}')
+# lengthRectangle = float(input("What is the length of the rectangle? "))
+# widthRectangle = float(input("What is the width of the rectangle? "))
+# areaRectangle = lengthRectangle * widthRectangle
 
-#------------------------------- STRETCH CHALLENGE --------------------------#
+# print(f"The area of the rectangle is: {areaRectangle}")
+
+# radiusCircle = float(input("What is the radius of the circle? "))
+# areaCircle = math.pi * (radiusCircle**2)
+# volumeSphere = (4 * math.pi * (radiusCircle**3)) / 3
+
+# print(f"The area of the circle is: {areaCircle}")
+# print(f"The volume of the sphere is: {volumeSphere}")
+
 
 sideSquare = float(
-    input('What is the length of a side of the square in centimeters? '))
-print(
-    f'\nThe area of the square is: {sideSquare ** 2}cm² / {(sideSquare ** 2)/1000}m³')
-print(
-    f'The volume of the square is: {sideSquare ** 3}cm² / {(sideSquare ** 3)/1000}m³\n')
+    input("What is the length of a side of the square in centimeters? "))
+areaSquare = sideSquare ** 2
+volumeSquare = sideSquare ** 3
 
+print(f"The area of the square is: {areaSquare}cm / {areaSquare / 10000}m")
+print(f"The volume of the square is: {volumeSquare}cm")
 
 lengthRectangle = float(
-    input('What is the length of the rectangle in centimeters?? '))
+    input("What is the length of the rectangle in centimeters? "))
 widthRectangle = float(
-    input('What is the width of the rectangle in centimeters?? '))
-print(
-    f'\nThe area of the rectangle is: {lengthRectangle * widthRectangle}cm² / {(lengthRectangle * widthRectangle)/1000}m³\n')
+    input("What is the width of the rectangle in centimeters? "))
+areaRectangle = lengthRectangle * widthRectangle
 
+print(
+    f"The area of the rectangle is: {areaRectangle}cm / {areaRectangle / 10000}m")
 
 radiusCircle = float(
-    input('What is the radius of the circle in centimeters? '))
-print(
-    f'\nThe area of the circle is: {math.pi * (radiusCircle**2):.2f}cm² / {(math.pi * (radiusCircle**2))/1000:.2f}m³')
-print(
-    f'The volume of the sphere is: {(4 * math.pi * (radiusCircle ** 3))/3:.2f}cm² / {((4 * math.pi * (radiusCircle ** 3))/3)/1000:.2f}m³')
+    input("What is the radius of the circle in centimeters? "))
+areaCircle = math.pi * (radiusCircle**2)
+volumeSphere = (4 * math.pi * (radiusCircle**3)) / 3
+
+print(f"The area of the circle is: {areaCircle}cm / {areaCircle / 10000}m")
+print(f"The volume of the sphere is: {volumeSphere}cm")
