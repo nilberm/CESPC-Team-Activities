@@ -10,6 +10,6 @@ while run_again == "yes":
     if (i % number == 0):
       print(letter.upper(), end="")
     else:
-      print(letter, end="")
+      print(letter.lower(), end="")
   run_again = input("\n\nWould you like to enter another number? ").lower()
 print("Goodbye")
